@@ -18,5 +18,10 @@ yarn-error.log*
 *.sw?
 
 
-# app
+# api
+api/db.sqlite
+api/uploads/*
+!api/**/.gitkeep
+
+# web
 web/.env
