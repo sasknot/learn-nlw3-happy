@@ -13,8 +13,8 @@ export default {
       longitude,
       about,
       instructions,
-      opening_hours,
-      open_on_weekends
+      opening_hours: openingHours,
+      open_on_weekends: openOnWeekends
     } = req.body
     const reqImages = req.files as Express.Multer.File[]
     const images = reqImages.map((item) => ({ path: item.filename }))
@@ -24,8 +24,8 @@ export default {
       longitude,
       about,
       instructions,
-      opening_hours,
-      open_on_weekends,
+      opening_hours: openingHours,
+      open_on_weekends: openOnWeekends === 'true',
       images
     }
     const schema = Yup.object().shape({
