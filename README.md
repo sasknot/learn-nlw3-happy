@@ -3,8 +3,11 @@
 ## Requirements
 
 - [NodeJS](https://nodejs.org/)
-- [PM2](https://pm2.keymetrics.io/) globally (`npm i -g pm2`)
 - [expo-cli](https://expo.io/) globally (`npm i -g expo-cli`)
+
+or
+
+- [Docker](https://www.docker.com/)
 
 ## Install
 
@@ -12,18 +15,19 @@
 
 ## Development
 
-### API & Web
-
-- `pm2 startOrReload ecosystem.config.js && pm2 logs`
-
 ### API
 
-- `npm start`
+- `cd api && npm start`
+
+- or simply `docker-compose up api`
 
 ### Web
 
+- `cd web`
 - Create a `.env` file and copy the contents of `.env.default` to it
 - `npm start`
+
+- or simply `docker-compose up web`
 
 ### Mobile
 
