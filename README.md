@@ -12,12 +12,13 @@
 
 ## Development
 
-- Be sure to have [PM2](https://pm2.keymetrics.io/) globally installed: `npm install -g pm2`
+### API & Web
+
 - `pm2 startOrReload ecosystem.config.js && pm2 logs`
 
 ### API
 
-`npm start`
+- `npm start`
 
 ### Web
 
@@ -34,3 +35,4 @@ https://github.com/Rocketseat/expo-common-issues
 
 - General refactor
 - Implement tests
+- A bootstrap command for them all
