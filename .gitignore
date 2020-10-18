@@ -25,3 +25,13 @@ api/uploads/*
 
 # web
 web/.env
+
+# mobile
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+mobile/.expo/*
+mobile/web-build/
