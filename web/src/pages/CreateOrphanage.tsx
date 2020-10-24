@@ -84,7 +84,7 @@ export default function CreateOrphanage () {
             <Map
               center={[-23.5657212, -46.6534179]}
               style={{ width: '100%', height: 280 }}
-              zoom={15}
+              zoom={10}
               onClick={handleMapClick}
             >
               <TileLayer url={process.env.REACT_APP_MAP_TILE_URL} />

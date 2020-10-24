@@ -42,7 +42,7 @@ export default function OrphanagesMap () {
 
       <Map
         center={[-23.5657212, -46.6534179]}
-        zoom={15}
+        zoom={10}
         style={{ width: '100%', height: '100%' }}
       >
         <TileLayer url={process.env.REACT_APP_MAP_TILE_URL} />

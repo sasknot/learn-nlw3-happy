@@ -37,6 +37,7 @@ https://github.com/Rocketseat/expo-common-issues
 
 ## TODO
 
+- Implement Happy 2.0
 - General refactor
 - Implement tests
 - A bootstrap command for them all
