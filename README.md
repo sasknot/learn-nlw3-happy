@@ -17,7 +17,7 @@ or
 
 ### API
 
-- `cd api && npm start`
+- `cd api && npm run dev`
 
 - or simply `docker-compose up api`
 

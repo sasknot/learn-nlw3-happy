@@ -1,0 +1,17 @@
+setup:
+  config:
+    API_PORT: 3333
+    REACT_APP_API_URL: http://localhost:3333
+
+build:
+  docker:
+    worker:
+      dockerfile: docker/api.Dockerfile
+      target: production
+    web:
+      dockerfile: docker/web.Dockerfile
+      target: production
+
+run:
+  worker: cd api && npm run
+  web: cd web/build && bundle exec rails s -p $PORT

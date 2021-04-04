@@ -17,7 +17,6 @@ yarn-error.log*
 *.sln
 *.sw?
 
-
 # api
 api/db.sqlite
 api/uploads/*
@@ -25,6 +24,7 @@ api/uploads/*
 
 # web
 web/.env
+web/build
 
 # mobile
 *.jks
