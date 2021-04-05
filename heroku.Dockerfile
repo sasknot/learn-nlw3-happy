@@ -15,4 +15,4 @@ RUN npm run build
 
 RUN npm install -g http-server
 
-CMD ["sh", "-c", "cd /var/www/api && npm run && cd /var/www/web/build && http-server -p $PORT -d false"]
+CMD ["sh", "-c", "cd /var/www/api && npm run && http-server /var/www/web/build -p $PORT -d false"]

@@ -2,20 +2,9 @@ setup:
   config:
     API_PORT: 3333
     REACT_APP_API_URL: http://localhost:3333
+    REACT_APP_MAP_TILE_URL: https://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 
 build:
   docker:
     web:
       dockerfile: heroku.Dockerfile
-
-# run:
-#   worker:
-#     command:
-#       - cd api
-#       - npm run
-#     image: web
-#   web:
-#     command:
-#       - cd web/build
-#       - bundle exec rails s -p $PORT
-#     image: web

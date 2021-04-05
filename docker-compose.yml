@@ -31,6 +31,9 @@ services:
     volumes:
       - "./web:/var/www"
       - "/var/www/node_modules"
+    environment:
+      - CI=true
+      - CHOKIDAR_USEPOLLING=true
 
   # mobile:
   #   build:

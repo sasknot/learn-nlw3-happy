@@ -6,7 +6,7 @@ import Routes from './routes'
 
 navigator.geolocation.getCurrentPosition((position: Position) => {
   const { latitude, longitude } = position.coords
-  console.log('position', position)
+  console.log('position', position, latitude, longitude)
 }, (error: PositionError) => {
   console.log('error', error)
   // put default location
