@@ -11,6 +11,7 @@ COPY web/package.json .
 COPY web/package-lock.json .
 RUN npm ci
 COPY web .
+RUN npm run build
 
 RUN npm install -g http-server
 
