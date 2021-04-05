@@ -4,7 +4,6 @@ services:
     build:
       dockerfile: ./docker/api.Dockerfile
       context: .
-      target: development
     image: learn/nlw3-api
     container_name: nlw3-api
     ports:
@@ -21,7 +20,6 @@ services:
     build:
       dockerfile: ./docker/web.Dockerfile
       context: .
-      target: development
     image: learn/nlw3-web
     container_name: nlw3-web
     ports:
@@ -38,7 +36,6 @@ services:
   #   build:
   #     dockerfile: ./docker/mobile.Dockerfile
   #     context: .
-  #     target: development
   #   image: learn/nlw3-mobile
   #   container_name: nlw3-mobile
   #   ports:

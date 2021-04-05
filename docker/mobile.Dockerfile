@@ -1,4 +1,4 @@
-FROM node:14.16.0-alpine3.13 AS development
+FROM node:14.16.0-alpine3.13
 
 WORKDIR /var/www
 COPY mobile/package.json .

@@ -7,11 +7,9 @@ build:
   docker:
     worker:
       dockerfile: docker/api.Dockerfile
-      context: .
       target: production
     web:
-      dockerfile: docker/web.Dockerfile
-      context: .
+      dockerfile: docker/heroku.Dockerfile
       target: production
 
 run:
