@@ -7,10 +7,8 @@ build:
   docker:
     worker:
       dockerfile: docker/api.Dockerfile
-      target: production
     web:
       dockerfile: docker/heroku.Dockerfile
-      target: production
 
 run:
   worker: cd api && npm run
