@@ -5,8 +5,6 @@ setup:
 
 build:
   docker:
-    worker:
-      dockerfile: docker/api.Dockerfile
     web:
       dockerfile: heroku.Dockerfile
 
