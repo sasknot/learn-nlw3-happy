@@ -1,7 +1,7 @@
 setup:
   config:
     API_PORT: 3333
-    REACT_APP_API_URL: http://localhost:3333
+    REACT_APP_API_URL: http://rafaelfsilva1-nlw3happy.herokuapp.com:3333
     REACT_APP_MAP_TILE_URL: https://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 
 build:
