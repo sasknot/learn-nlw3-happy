@@ -8,7 +8,7 @@ build:
     worker:
       dockerfile: docker/api.Dockerfile
     web:
-      dockerfile: docker/heroku.Dockerfile
+      dockerfile: heroku.Dockerfile
 
 run:
   worker: cd api && npm run
