@@ -9,5 +9,7 @@ build:
       dockerfile: heroku.Dockerfile
 
 run:
-  worker: cd api && npm run
+  worker:
+    command: cd api && npm run
+    image: web
   web: cd web/build && bundle exec rails s -p $PORT
